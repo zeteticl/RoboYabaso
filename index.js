@@ -48,7 +48,7 @@ app.post('/', jsonParser, function (req, res) {
 	}
 	//把回應的內容,掉到replyMsgToLine.js傳出去
 	if (rplyVal) {
-		exports.replyMsgToLine.replyMsgToLine(rplyToken, rplyVal, options);
+		exports.replyMsgToLine.replyMsgToLine(rplyToken, createWebpage("",""), options);
 	} else {
 		//console.log('Do not trigger'); 
 	}
@@ -155,23 +155,17 @@ alicesmith.save(function (err) { if (err) console.log('Error on save!') });
 
 
 
-function createWebpage (req, res) {
-  // Let's find all the documents
-  PUser.find({}).exec(function(err, result) { 
-    if (!err) { 
-      res.write(html1 + JSON.stringify(result, undefined, 2) +  html2 + result.length + html3);
-      // Let's see if there are any senior citizens (older than 64) with the last name Doe using the query constructor
-      var query = PUser.find({'name.last': 'Doe'}); // (ok in this example, it's all entries)
-      query.where('age').gt(64);
-      query.exec(function(err, result) {
-	if (!err) {
-	  res.end(html4 + JSON.stringify(result, undefined, 2) + html5 + result.length + html6);
-	} else {
-	  res.end('Error in second query. ' + err)
-	}
-      });
-    } else {
-      res.end('Error in first query. ' + err)
-    };
-  });
+function createWebpage(req, res) {
+	// Let's find all the documents
+	PUser.find({}).exec(function (err, result) {
+		if (!err) {
+			let abc ={};
+			abc.text = result;
+			return abc;// Let's see if there are any senior citizens (older than 64) with the last name Doe using the query constructor
+			//var query = PUser.find({ 'name.last': 'Doe' }); // (ok in this example, it's all entries)
+			//query.where('age').gt(64);
+		} else {
+			res.end('Error in first query. ' + err)
+		};
+	});
 }
