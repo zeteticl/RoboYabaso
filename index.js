@@ -48,7 +48,8 @@ app.post('/', jsonParser, function (req, res) {
 	}
 	//把回應的內容,掉到replyMsgToLine.js傳出去
 	if (rplyVal) {
-		exports.replyMsgToLine.replyMsgToLine(rplyToken, createWebpage("",""), options);
+		rplyVal.text = johndoe;
+		exports.replyMsgToLine.replyMsgToLine(rplyToken, rplyVal, options);
 	} else {
 		//console.log('Do not trigger'); 
 	}
@@ -159,7 +160,7 @@ function createWebpage(req, res) {
 	// Let's find all the documents
 	PUser.find({}).exec(function (err, result) {
 		if (!err) {
-			let abc ={};
+			let abc = {};
 			abc.text = result;
 			return abc;// Let's see if there are any senior citizens (older than 64) with the last name Doe using the query constructor
 			//var query = PUser.find({ 'name.last': 'Doe' }); // (ok in this example, it's all entries)
