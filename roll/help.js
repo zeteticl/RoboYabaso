@@ -181,8 +181,8 @@ function Help() {
 						},
 						{
 							"type": "message",
-							"label": "死亡FLAG",
-							"text": "立Flag/死亡flag"
+							"label": "死亡FLAG, 運氣占卜",
+							"text": "立Flag/死亡flag, 全句中包含運勢兩字"
 						},
 						{
 							"type": "message",
