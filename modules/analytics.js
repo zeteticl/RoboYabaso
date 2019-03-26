@@ -93,7 +93,7 @@ function parseInput(rplyToken, inputStr) {
 	if (trigger.match(/立flag|死亡flag/) != null) return exports.funny.BStyleFlagSCRIPTS();
 
 	//鴨霸獸指令開始於此
-	if (trigger.match(/鴨霸獸|巴獸/) != null) return exports.funny.randomReply();
+	if (trigger.match(/鴨霸獸/) != null) return exports.funny.randomReply();
 	if (trigger.match(/運勢/) != null) return exports.funny.randomLuck(mainMsg); //占卜運氣		
 
 
