@@ -1,5 +1,11 @@
 if (process.env.LINE_CHANNEL_ACCESSTOKEN) {
 	try {
+		require('fs').readdirSync('./modules/').forEach(function(file) {
+			if (file.match(/\.js$/) !== null && file !== 'index.js') {
+			  var name = file.replace('.js', '');
+			  exports[name] = require('../modules/' + file);
+			}
+		  });
 
 		var express = require('express');
 		var bodyParser = require('body-parser');
