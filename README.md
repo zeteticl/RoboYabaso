@@ -1,3 +1,11 @@
+把Line版  Discord版 和Telegram版 合成一個項目了</br>
+所以這項目不再更新</br>
+</br></br>
+https://github.com/hktrpg/TG.line.Discord.Roll.Bot
+
+</br></br></br></br></br></br></br></br></br></br>
+
+
 # RoboYabaso@HKTRPG  V1.7.2：開放原始碼的LINE骰子機器人
 
 關於RoboYabaso
