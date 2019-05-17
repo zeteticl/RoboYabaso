@@ -1,9 +1,11 @@
-把Line版  Discord版 和Telegram版 合成一個項目了</br>
-所以這項目不再更新</br>
-雖然是三合一, 但每個BOT可以單獨啓動</br>
-</br>
+這項目已不再更新</br>
+整合成一個可以同時在Telegram Discord Line 上運行項目了</br>
+所以新的功能都只會加入在新項目上</br>
+新項目雖然是三合一, 但可以單獨啓動, 想要line 就只啟動line 平台功能</br>
+新項目網址:</br>
 https://github.com/hktrpg/TG.line.Discord.Roll.Bot
 
+</br></br></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></br></br>
 
 
