@@ -15,6 +15,8 @@ Telegram版： </br>
 http://t.me/hktrpg_bot</br>
 網頁版：</br>
 https://www.hktrpg.com/tool/rollbot.html</br></br>
+簡易版網頁擲骰工具：</br>
+https://www.hktrpg.com/tool/roll.html
 
 
 </br></br></br></br></br></br></br></br></br></br>
