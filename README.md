@@ -5,6 +5,18 @@
 新項目網址:</br>
 https://github.com/hktrpg/TG.line.Discord.Roll.Bot
 
+想試用這機械人的話,請按以下連結，輸入bothelp顯示教學.
+
+Line版：
+https://line.me/R/ti/p/svMLqy9Mik
+Discord版： 
+https://discordapp.com/oauth2/authorize?&client_id=544462904037081138&scope=bot&permissions=8
+Telegram版： 
+http://t.me/hktrpg_bot
+網頁版：
+https://www.hktrpg.com/tool/rollbot.html
+
+
 </br></br></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></br></br>
 
